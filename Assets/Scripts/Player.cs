@@ -17,8 +17,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Gamepad gamepad = Gamepad.current;
-        if (gamepad == null) return;
+        //Gamepad gamepad = Gamepad.current;
+        //if (gamepad == null) return;
 
         // movement
         // (input manager)
@@ -42,22 +42,22 @@ public class Player : MonoBehaviour
         //}
     }
 
-    private void OnFire()
+    public void OnFire()
     {
         GameObject go = Instantiate(shot, transform.position, Quaternion.identity);
     }
 
-    private void OnMove(InputValue inputValue)
+    public void OnMove(InputValue inputValue)
     {
         input = inputValue.Get<Vector2>();
     }
 
-    private void OnMove(InputAction.CallbackContext context)
+    public void OnMove(InputAction.CallbackContext context)
     {
         input = context.ReadValue<Vector2>();
     }
 
-    private void HandleAction(InputAction.CallbackContext context)
+    public void HandleAction(InputAction.CallbackContext context)
     {
         if (context.action.name == "Fire")
         {
