@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class TouchHit : MonoBehaviour
 {
-	public float distance = 10;
-
 	private void OnEnable()
 	{
 		TouchManager.Instance.touchStartEvent += Touch;
@@ -13,6 +11,8 @@ public class TouchHit : MonoBehaviour
 
 	private void OnDisable()
 	{
+		if (TouchManager.Instance == null) return;
+
 		TouchManager.Instance.touchStartEvent -= Touch;
 	}
 
@@ -23,7 +23,7 @@ public class TouchHit : MonoBehaviour
 		{
 			if (raycastHit.collider.gameObject == gameObject)
 			{
-				Destroy(gameObject);
+				GetComponent<SpriteRenderer>().material.color = new Color(Random.value, Random.value, Random.value);
 			}
 		}
 	}
