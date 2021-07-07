@@ -6,8 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Gyro.unity
-    guid: 76d72125826bb2740b4ba762e683be4b
+    path: Assets/Scenes/AR.unity
+    guid: 03fff8e127b855344958340b12a2e8d2
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 3861375144228c8469be726190e2dd36, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 9f1f682415672e641bd18784f10c9370, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7a8e3cb7cacc4da4cab83cd29992c38b, type: 2}
