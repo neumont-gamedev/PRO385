@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class TouchManager : MonoBehaviour
 {
     public delegate void touchDelegate(Vector2 position);
-
     public event touchDelegate touchStartEvent;
     public event touchDelegate touchStopEvent;
     public event touchDelegate touchUpdateEvent;

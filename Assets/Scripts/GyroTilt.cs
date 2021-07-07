@@ -18,6 +18,14 @@ public class GyroTilt : MonoBehaviour
 
 	void Tilt(Quaternion rotation)
 	{
-		transform.rotation = rotation;
+		//Quaternion quat = Quaternion.FromToRotation(rotation.for);
+		Quaternion quat = rotation;// Quaternion.Euler(0, 0, 90) * GyroManager.InvertGyro(rotation);
+		transform.rotation = quat;
 	}
+
+	//Quaternion quat = GyroManager.InvertGyro(rotation);
+	//Quaternion quat = Quaternion.Euler(0, 0, 90) * rotation;
+	// invert the rotation
+	//Quaternion quat = Quaternion.Euler(0, 0, 90) * GyroManager.InvertGyro(rotation);
+
 }

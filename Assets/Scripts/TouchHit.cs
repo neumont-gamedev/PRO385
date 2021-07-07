@@ -23,8 +23,13 @@ public class TouchHit : MonoBehaviour
 		{
 			if (raycastHit.collider.gameObject == gameObject)
 			{
-				GetComponent<SpriteRenderer>().material.color = new Color(Random.value, Random.value, Random.value);
+				RandomColor();
 			}
 		}
+	}
+
+	public void RandomColor()
+	{
+		GetComponent<SpriteRenderer>().material.color = new Color(Random.value, Random.value, Random.value);
 	}
 }

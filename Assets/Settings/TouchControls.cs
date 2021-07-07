@@ -40,7 +40,7 @@ public class @TouchControls : IInputActionCollection, IDisposable
                     ""id"": ""c001fd30-8c17-4b7e-953c-9f237235306c"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": ""Press""
+                    ""interactions"": ""Press(behavior=2)""
                 }
             ],
             ""bindings"": [
@@ -69,7 +69,7 @@ public class @TouchControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""b9a41b53-0d90-44f0-af20-bab42d037231"",
-                    ""path"": ""<Touchscreen>/primaryTouch/position"",
+                    ""path"": ""<Touchscreen>/position"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
